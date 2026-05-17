@@ -17,33 +17,26 @@
   <img src="https://img.shields.io/badge/RUNTIME-PUREJS-000?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkUxNjUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTQuNSAySDZhMiAyIDAgMCAwLTIgMnYxNmEyIDAgMCAwIDAgMiAyaDEyYTIgMiAwIDAgMCAyLTJWNy41TDE0LjUgMnoiLz48cG9seWxpbmUgcG9pbnRzPSIxNCAyIDE0IDggMjAgOCIvPjxsaW5lIHgxPSIxNiIgeDI9IjgiIHkxPSIxMyIgeTI9IjEzIi8+PGxpbmUgeDE9IjE2IiB4Mj0iOCIgeTE9IjE3IiB5Mj0iMTciLz48bGluZSB4MT0iMTAiIHgyPSI4IiB5MT0iOSIgeTI9IjkiLz48L3N2Zz4=" alt="RUNTIME">
   <hr>
 </div>
-
-<div class="flexilis-auto-scroll-container" style="display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; border-radius: 8px; border: 1px solid #7A46F1; box-shadow: 0 4px 20px rgba(122, 70, 241, 0.15); padding: 8px; scroll-behavior: smooth;">
-  <style>
-    @keyframes flexilis-slide-anim {
-      0%, 45% { transform: translateX(0); }
-      50%, 95% { transform: translateX(calc(-100% - 16px)); }
-      100% { transform: translateX(0); }
-    }
-    .flexilis-auto-scroll-container > div {
-      animation: flexilis-slide-anim 22s infinite ease-in-out;
-    }
-    .flexilis-auto-scroll-container:hover > div {
-      animation-play-state: paused;
-    }
-    .flexilis-auto-scroll-container::-webkit-scrollbar {
-      display: none;
-    }
-  </style>
-  <div style="flex: 0 0 100%; scroll-snap-align: start; box-sizing: border-box;">
-    <p align="center" style="margin: 4px 0 8px; font-size: 13px; color: #a3a3a3;">🎬 Swipe or scroll right for Image Preview →</p>
-    <video src="assets/obsidianflexilis.clip.webm" width="100%" controls autoplay loop muted style="border-radius: 6px; display: block;"></video>
-  </div>
-  <div style="flex: 0 0 100%; scroll-snap-align: start; box-sizing: border-box;">
-    <p align="center" style="margin: 4px 0 8px; font-size: 13px; color: #a3a3a3;">← 🖼️ Image Preview</p>
-    <img src="assets/obsidian_flexilis.webp" width="100%" alt="Screen Preview" style="border-radius: 6px; display: block;">
-  </div>
-</div>
+<table width="100%" style="border-collapse: collapse; border: none; margin: 20px 0;">
+  <tr>
+     <td width="50%" style="border: none; padding: 0 8px 0 0; vertical-align: top;">
+      <div style="border: 1px solid #7A46F1; border-radius: 8px; box-shadow: 0 4px 20px rgba(122, 70, 241, 0.15); padding: 12px; background: rgba(122, 70, 241, 0.03);">
+        <p align="center" style="margin: 0 0 8px 0; font-size: 13px; font-weight: bold; color: #a3a3a3;">
+          🎬 Interactive Video Walkthrough
+        </p>
+        <video src="assets/obsidianflexilis.clip.webm" width="100%" controls autoplay loop muted style="border-radius: 6px; display: block;"></video>
+      </div>
+    </td>
+    <td width="50%" style="border: none; padding: 0 0 0 8px; vertical-align: top;">
+      <div style="border: 1px solid #7A46F1; border-radius: 8px; box-shadow: 0 4px 20px rgba(122, 70, 241, 0.15); padding: 12px; background: rgba(122, 70, 241, 0.03);">
+        <p align="center" style="margin: 0 0 8px 0; font-size: 13px; font-weight: bold; color: #a3a3a3;">
+          🖼️ High-Fidelity Image Preview
+        </p>
+        <img src="assets/obsidian_flexilis.webp" width="100%" alt="Screen Preview" style="border-radius: 6px; display: block;">
+      </div>
+    </td>
+  </tr>
+</table>
 
 <div align="center">
   <p>
