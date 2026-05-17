@@ -13,8 +13,8 @@ category:
 compatibility:
   - Obsidian >=1.5.0
   - Datacore >=0.8.0
-repository: https://github.com/beto-group/ObsidianFlexilis
-github: https://github.com/beto-group/ObsidianFlexilis
+repository:
+  - https://github.com/beto-group/ObsidianFlexilis
 missing:
   - Media-Showcase-Capture
 resources:
