@@ -18,7 +18,7 @@
   <hr>
 </div>
 
-![Obsidian Flexilis Walkthrough](https://raw.githubusercontent.com/beto-group/ObsidianFlexilis/main/assets/obsidianflexilis.clip.gif)
+![Obsidian Flexilis Walkthrough](assets/obsidianflexilis.clip.gif)
 
 <div align="center">
   <p>
@@ -42,9 +42,15 @@ By utilizing a sterile, zero-dependency in-memory cache, Flexilis manages thousa
 
 ---
 
-## 🚀 Quick Launch
-*   **Viewer Entry Point**: [OBSIDIAN FLEXILIS.md](OBSIDIAN FLEXILIS.md)
-*   **Logic Component**: [src/ObsidianFlexilis.component.jsx](src/ObsidianFlexilis.component.jsx)
-*   **Engineering Standards**: [CONTRIBUTION.md](CONTRIBUTION.md)
+## 📦 Directory Index & Components
 
-BETO.GROUP - create factotums...
+The package exposes the following compiled files:
+
+| File | Description |
+| :--- | :--- |
+| **[OBSIDIAN FLEXILIS.md](OBSIDIAN%20FLEXILIS.md)** | The main entry point designed to be loaded inside Obsidian canvases or workspace leaves. |
+| **[src/App.jsx](src/App.jsx)** | Main bootstrap application loader that resolves and wires the underlying views. |
+| **[src/ObsidianFlexilis.component.jsx](src/ObsidianFlexilis.component.jsx)** | High-fidelity React grid and frontmatter metadata controller. |
+| **[METADATA.md](METADATA.md)** | Packaging manifest outlining indexing, target, and security configurations. |
+| **[CONTRIBUTION.md](CONTRIBUTION.md)** | Contributor architecture standards and local compilation guidelines. |
+| **[LICENSE.md](LICENSE.md)** | MIT open-source license. |
