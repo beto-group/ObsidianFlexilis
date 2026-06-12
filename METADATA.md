@@ -1,8 +1,9 @@
 ---
 author: beto.group
+contributor: []
 version: 4.0.0
 id: obsidian-flexilis-829153
-name: OBSIDIAN FLEXILIS
+name: ObsidianFlexilis
 description: Variable-height virtualized data grid and frontmatter metadata controller designed natively for Obsidian.
 status: stable
 complexity: advanced
@@ -18,8 +19,8 @@ repository:
 missing:
   - Media-Showcase-Capture
 resources:
-  - obsidian_flexilis.webp
-  - obsidianflexilis.clip.gif
+  - assets/image/preview_1.webp
+  - assets/videos/preview.gif
 type: DatacoreComponent
 target: Datacore
 security:
@@ -29,7 +30,7 @@ storage:
 network: Offline
 runtime: PureJS
 entry_point: OBSIDIAN FLEXILIS.md
-logic: src/DatacoreFlexilis.component.jsx
+logic: src/ObsidianFlexilis.component.jsx
 ---
 
 This file contains the machine-readable packaging manifest and indexing properties for this component.

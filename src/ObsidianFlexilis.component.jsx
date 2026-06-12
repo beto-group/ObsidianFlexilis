@@ -2,6 +2,7 @@
 // Version: 4.0.0-ADAPTER
 
 async function View({ folderPath, dc }) {
+  dc.currentFolderPath = folderPath;
   const adapter = dc.app.vault.adapter;
 
   // 1. SAFE AGENT (Persistent CLI/MCP Command Polling)

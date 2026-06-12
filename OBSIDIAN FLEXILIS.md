@@ -25,7 +25,10 @@ stickyColumns:
 # OBSIDIAN FLEXILIS
 
 ```datacorejsx
-const activeFileObj = (dc.app || app).vault.getAbstractFileByPath(dc.path);
+const currentFilePath = dc.useCurrentPath();
+const folderPath = currentFilePath ? currentFilePath.substring(0, currentFilePath.lastIndexOf("/")) : "";
+
+const activeFileObj = currentFilePath ? (dc.app || app).vault.getAbstractFileByPath(currentFilePath) : null;
 const frontmatter = activeFileObj ? (dc.app || app).metadataCache.getFileCache(activeFileObj)?.frontmatter : {};
 
 // 1. DYNAMIC COLUMNS PARSER: Parse native YAML list columns (supports '=', '->', and legacy ':')
@@ -108,16 +111,12 @@ const initialSettingsOverride = {
   }
 };
 
-const activeFilePath = activeFileObj?.path || "";
-let folderPath = activeFilePath.substring(0, activeFilePath.lastIndexOf('/'));
-if (folderPath.endsWith('/dist')) folderPath = folderPath.substring(0, folderPath.length - 5);
-
 const { View } = await dc.require(folderPath + '/src/ObsidianFlexilis.component.jsx');
 const result = await View({ folderPath, dc });
 
 if (typeof result === 'function') {
     const Dashboard = result;
-    return <Dashboard folderPath={folderPath} dc={dc} initialSettingsOverride={initialSettingsOverride} currentFilePath={activeFilePath} />;
+    return <Dashboard folderPath={folderPath} dc={dc} initialSettingsOverride={initialSettingsOverride} currentFilePath={currentFilePath} />;
 }
 return result;
 ```
